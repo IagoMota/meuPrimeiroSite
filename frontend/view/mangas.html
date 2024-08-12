@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mangas.css">
+    <title>Mangás</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/">Início</a>
+            <a href="/mangas">Mangás</a>
+            <a href="/filmes">Filmes</a>
+        </nav>
+    </header>
+
+    
+
+    <main>
+        <section>
+            
+        </section>
+    </main>
+
+    <script type="module">
+        const main = document.querySelector("main")
+        const promiseDosDados = await fetch("../database/listaDeAnimes.json");
+        const dadosDoServidor = await promiseDosDados.json();
+
+        dadosDoServidor.forEach(executar)
+
+        function executar (oi){
+            console.log(oi)
+            const card = document.createElement("div")
+            card.classList.add("card")
+
+            const capa = document.createElement("img")
+            capa.classList.add("capa")
+            capa.src = oi.capa  
+
+            const nome = document.createElement("p")
+            nome.classList.add("nome")
+            nome.textContent = oi.nome  
+            
+            const dataDeLancamento = document.createElement("p")
+            dataDeLancamento.classList.add("data-de-lancamento")
+            dataDeLancamento.textContent = oi.data_de_lançamento  
+
+            const episodios = document.createElement("p")
+            episodios.classList.add("episodios")
+            episodios.textContent = oi.episódios  
+
+            
+            card.appendChild(capa)
+            card.appendChild(nome)
+            card.appendChild(dataDeLancamento)
+            card.appendChild(episodios)
+            main.appendChild(card)
+        }
+    </script>
+</body>
+
+</html>

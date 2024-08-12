@@ -93,4 +93,4 @@ const servidor = http.createServer((pedido, resposta) => {
     }
 });
 
-servidor.listen(portaDeEntrada);
+servidor.listen(portaDeEntrada, '0.0.0.0');

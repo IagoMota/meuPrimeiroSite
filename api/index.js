@@ -10,7 +10,7 @@ const servidor = http.createServer((pedido, resposta) => {
         fs.readFile(__dirname + 'frontend/view/index.html', (erro, dadosDoArquivo) => {
             if (erro) {
                 resposta.writeHead(500, { 'Content-Type': 'text/plain' });
-                resposta.end('Erro no servidor!');
+                resposta.end('SPIRILININIBILININI!');
                 return;
             }
             resposta.writeHead(200, { 'Content-Type': 'text/html' });
@@ -22,7 +22,7 @@ const servidor = http.createServer((pedido, resposta) => {
         fs.readFile(__dirname + 'frontend/view/mangas.html', (erro, dadosDoArquivo) => {
             if (erro) {
                 resposta.writeHead(500, { 'Content-Type': 'text/plain' });
-                resposta.end('Erro no servidor!');
+                resposta.end('SPIRILININIBILININI!');
                 return;
             }
             resposta.writeHead(200, { 'Content-Type': 'text/html' });
@@ -34,7 +34,7 @@ const servidor = http.createServer((pedido, resposta) => {
         fs.readFile(__dirname + 'frontend/view/filmes.html', (erro, dadosDoArquivo) => {
             if (erro) {
                 resposta.writeHead(500, { 'Content-Type': 'text/plain' });
-                resposta.end('Erro no servidor!');
+                resposta.end('SPIRILININIBILININI!');
                 return;
             }
             resposta.writeHead(200, { 'Content-Type': 'text/html' });
@@ -46,7 +46,7 @@ const servidor = http.createServer((pedido, resposta) => {
         fs.readFile(__dirname + 'frontend/view/css/index.css', (erro, dadosDoArquivo) => {
             if (erro) {
                 resposta.writeHead(500, { 'Content-Type': 'text/plain' });
-                resposta.end('Erro no servidor!');
+                resposta.end('SPIRILININIBILININI!');
                 return;
             }
             resposta.writeHead(200, { 'Content-Type': 'text/css' });
@@ -58,7 +58,7 @@ const servidor = http.createServer((pedido, resposta) => {
         fs.readFile(__dirname + 'frontend/view/css/mangas.css', (erro, dadosDoArquivo) => {
             if (erro) {
                 resposta.writeHead(500, { 'Content-Type': 'text/plain' });
-                resposta.end('Erro no servidor!');
+                resposta.end('SPIRILININIBILININI!');
                 return;
             }
             resposta.writeHead(200, { 'Content-Type': 'text/css' });
@@ -70,7 +70,7 @@ const servidor = http.createServer((pedido, resposta) => {
         fs.readFile(__dirname + 'frontend/view/css/filmes.css', (erro, dadosDoArquivo) => {
             if (erro) {
                 resposta.writeHead(500, { 'Content-Type': 'text/plain' });
-                resposta.end('Erro no servidor!');
+                resposta.end('SPIRILININIBILININI!');
                 return;
             }
             resposta.writeHead(200, { 'Content-Type': 'text/css' });
@@ -83,7 +83,7 @@ const servidor = http.createServer((pedido, resposta) => {
             if (erro) {
                 console.log(erro)
                 resposta.writeHead(500, { 'Content-Type': 'text/plain' });
-                resposta.end('Erro no servidor!');
+                resposta.end('SPIRILININIBILININI!');
                 return;
             }
             resposta.writeHead(200, { 'Content-Type': 'text/css' });
